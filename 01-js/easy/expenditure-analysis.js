@@ -26,8 +26,8 @@ function calculateTotalSpentByCategory(transactions) {
       transMap.set(category, transMap.get(category)+price )
     }
   })
-  res = Array.from(transMap);
-  result = Array.from(transMap).map(([category, totalSpent]) => ({category, totalSpent}))
+  let res = Array.from(transMap);
+  let result = Array.from(transMap).map(([category, totalSpent]) => ({category, totalSpent}))
   return result;
 }
 
